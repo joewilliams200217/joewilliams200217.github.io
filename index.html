@@ -39,6 +39,9 @@
 
         <h2> Week 2</h2>
 
+        <h3>IMF Lending Outstanding</h3>
+        <p>This chart looks at the total IMF Credit Oustanding for all members from 1984-2022</p>
+        <div class="chart" id="Chart3"> </div>
     </div> 
 </body>
 
@@ -47,10 +50,12 @@
     //Define charts:
     var myChart1 = "chartFootball1.json";
     var myChart2 = "chartGDP2.json";
+    var myChart3 = "IMF_Outstanding.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
 </script>
 
 </html>
