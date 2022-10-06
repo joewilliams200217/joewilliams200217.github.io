@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>Portfolio</h1>
+        
+        <h2> Week 1</h2>
+
+        <h3>English Premiership</h3>
+        <p>My first chart looks at whether there is a home advantage in the Premiership.</p>
+        <div class="chart" id="Chart1"></div>
+
+        <h3>GNI in the UK</h3>
+        <p>My second chart looks at Gross National Income in the UK between 2005 and 2022</p>
+        <div class="chart" id="Chart2"> </div>
+
+        <h2> Week 2</h2>
+
+        <h3>IMF Lending Outstanding</h3>
+        <p>This chart looks at the total IMF Credit Oustanding for all members from 1984-2022</p>
+        <div class="chart" id="Chart3"> </div>
+
+        <h3>Improvement to FT graph on IMF Lending</h3>
+    </div> 
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "chartFootball1.json";
+    var myChart2 = "chartGDP2.json";
+    var myChart3 = "IMF_Outstanding.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+</script>
+
+</html>
