@@ -51,6 +51,12 @@
         <h3>Improvement to FT graph on IMF Lending</h3>
         <p>This chart looks at IMF Credit Outstanding as a percentage of World GDP</p>
         <div class="chart" id="Chart4"> </div>
+
+        <h2> Week 3</h2>
+
+        <h3>Japan</h3>
+        <p>This chart shows population in Japan from 1960 to 2021</p>
+        <div class="chart" id="Chart5"> </div>
     </div> 
 </body>
 
@@ -59,14 +65,16 @@
     //Define charts:
     var myChart1 = "chartFootball1.json";
     var myChart2 = "chartGDP2.json";
-    var myChart3 = "IMF_Outstanding"
+    var myChart3 = "IMF_Outstanding.json";
     var myChart4 = "IMF_Outstanding_as_percentage_of_GDP.json";
+    var myChart5 = "Japan.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
 </script>
 
 </html>
