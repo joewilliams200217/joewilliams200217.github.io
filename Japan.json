@@ -15,8 +15,17 @@
     },
     "mark": "line",
     "encoding": {
-      "x": {"field": "Year", "type": "temporal", "axis": {"labelAngle": 0,}},
-      "y": {"field": "Population", "type": "quantitative"}
+      "x": {
+        "field": "Year", 
+        "type": "temporal", 
+        "axis": {
+          "title": null,
+          "grid": false,
+          "ticks": false,
+          "labelAngle": 45}},
+      "y": {
+        "field": "Population", 
+        "type": "quantitative"}
     }
   }
   
