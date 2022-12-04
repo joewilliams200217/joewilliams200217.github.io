@@ -1,0 +1,21 @@
+Country,League,Club,Player Names,Matches_Played,Substitution ,Mins,Goals,xG,xG Per Avg Match,Shots,OnTarget,Shots Per Avg Match,On Target Per Avg Match,Year
+England,Premier League,(EVE),Dominic Calvert-Lewin,30,6,2849,13,16.19,0.54,85,38,2.83,1.27,2019
+England,Premier League,(WOL),Raul Jimenez,37,1,3445,17,18.49,0.51,118,43,3.25,1.19,2019
+England,Premier League,(MNC),Kevin De Bruyne,32,3,2984,13,7.22,0.23,99,31,3.15,0.99,2019
+England,Premier League,(LEI),Jamie Vardy,34,1,3271,23,19.28,0.56,89,42,2.58,1.22,2019
+England,Premier League,(MNC),Raheem Sterling,30,3,2836,20,20.3,0.68,99,38,3.32,1.27,2019
+England,Premier League,(LIV),Sadio Mane,31,4,2933,18,14.51,0.47,77,36,2.49,1.17,2019
+England,Premier League,(BUR),Chris Wood,29,3,2616,14,17.07,0.62,65,29,2.36,1.05,2019
+England,Premier League,(MNU),Anthony Martial,31,1,2788,17,11.74,0.4,80,39,2.73,1.33,2019
+England,Premier League,(MNC),Riyad Mahrez,21,12,2130,11,7.62,0.34,74,31,3.3,1.38,2019
+England,Premier League,(TOT),Son Heung-Min,28,2,2663,11,9.25,0.33,81,38,2.89,1.36,2019
+England,Premier League,(MNU),Marcus Rashford,31,0,2826,17,19.93,0.67,95,44,3.19,1.48,2019
+England,Premier League,(LIV),Mohamed Salah,33,1,3045,19,20.51,0.64,132,59,4.12,1.84,2019
+England,Premier League,(MNC),Gabriel Jesus,21,13,2209,14,20.69,0.89,101,46,4.34,1.98,2019
+England,Premier League,(SOU),Danny Ings,32,6,3009,22,16.79,0.53,93,37,2.94,1.17,2019
+England,Premier League,(ARS),Pierre-Emerick Aubameyang,35,1,3392,22,16.07,0.45,93,42,2.6,1.18,2019
+England,Premier League,(TOT),Harry Kane,29,0,2801,18,12.97,0.44,81,37,2.75,1.25,2019
+England,Premier League,(EVE),Richarlison  ,36,0,3289,13,10.73,0.31,90,32,2.6,0.92,2019
+England,Premier League,(NOR),Teemu Pukki,33,3,3087,11,11.37,0.35,80,35,2.46,1.08,2019
+England,Premier League,(CHE),Tammy Abraham,25,9,2380,15,19.29,0.77,88,35,3.51,1.4,2019
+England,Premier League,(MNC),Sergio Aguero,18,6,1566,16,15.5,0.94,76,27,4.61,1.64,2019
