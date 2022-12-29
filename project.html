@@ -7,21 +7,65 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="project.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
 <body>
+
+    <body>
+        <div class="topnav">
+            <a href="index.html" id="link1">Home</a>
+            <a href="project.html" id="link2">Project</a>
+            <a href="portfolio.html" id="link3">Portfolio</a>
+            <a href="https://github.com/joewilliams200217/joewilliams200217.github.io" id="link4">Github</a>  
+        </div>
+        
     <div class="myWeek1">   
-<h1>This is my project</h1>
+<h1>Data Science Project</h1>
 
-<p>Question goes here</p>
+<h2>To what extent has Covid-19 impacted the long term shopping habits of consumers</h2>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+<h3>Graph 1 - online vs instore</h3>
+<p>This shows the comparison of spending between online and instore spending</p>
+<div class="chart" id="Chart1"></div>
+<hr />
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+<h3>Graph 2 - store changes</h3>
+<p></p>
+<div class="chart" id="Chart2"></div>
+<hr />
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+<h3>Graph 3 - Highstreet data</h3>
+<p></p>
+<div class="chart" id="Chart3"></div>
+<hr />
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+<h3>Graph 4 - Online spending</h3>
+<p></p>
+<div class="chart" id="Chart4"></div>
+<hr />
+
+<h3>Graph 5 - </h3>
+<p></p>
+<hr />
 
 </body>
+
+<script>
+    //Define charts:
+    var myChart1 = "instoreonline.json";
+    var myChart2 = "StoreChangesBar.json";
+    var myChart3 = "highstreet.json";
+    var myChart4 = "Onlinespending.json";
+   
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+</script>
 
 </html>

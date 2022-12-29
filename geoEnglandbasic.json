@@ -1,0 +1,27 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+"description": "Comparison of instore shopping and online shopping",
+"title": {
+    "text": "Map of England",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"},
+"height": 300,
+"width": 280,
+
+"data": {
+  "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/geoEngland.json",
+   "format": { 
+      "property": "features"}},
+"projection": {"type":"mercator"},
+"mark":{
+    "type": "geoshape",
+    "stroke": "darkgray",
+    "strokeWidth":0.5},
+"encoding": {"tooltip":[
+      {"field":"properties.EER13NM", "type":"nominal", "title": "Area"}]
+
+
+}}

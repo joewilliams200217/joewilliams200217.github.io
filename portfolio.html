@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>Portfolio Page</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -23,27 +23,115 @@
 
 
 <body>
-    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myWeek1">
-        <h1>Portfolio</h1>
-        
-        <h2> Week 1</h2>
+    <div class="topnav">
+        <a href="project.html" id="link1">Project</a>
+        <a href="portfolio.html" id="link2">Portfolio</a>
+        <a href="https://github.com/joewilliams200217/joewilliams200217.github.io" id="link3">Github</a>  
+    </div>
 
-        <h3>English Premiership</h3>
-        <p>My first chart looks at whether there is a home advantage in the Premiership.</p>
-        <div class="chart" id="Chart1"></div>
+    <div class="Title">
+        <h1>Data Science Home Page</h1>
+        <h2>Joe Williams | Student ID: 2038165</h2>
+        <hr />
+    </div>
+    
+    
+    
+    <div class="Week1">
+        <h2> Task 1</h2>
+        <h3>The English Premiership and GNI in the UK</h3>
+        <table>
+        <tr>    <td>    <div class="chartweek1" id="Chart1"></div>   </td>
+            <td>    <div class="chartweek1" id="Chart2"></div>   </td>   </tr>
+        </table>
+        <p>The first chart looks at whether there is a home advantage in the Premiership and the second chart looks at Gross National Income in the UK between 2005 and 2022</p>
+         <hr />
+    </div>
 
-        <h3>GNI in the UK</h3>
-        <p>My second chart looks at Gross National Income in the UK between 2005 and 2022</p>
-        <div class="chart" id="Chart2"> </div>
-
-        <h2> Week 2</h2>
+    <div class="Week2">
+        <h2> Task 2</h2>
 
         <h3>IMF Lending Outstanding</h3>
-        <p>This chart looks at the total IMF Credit Oustanding for all members from 1984-2022</p>
-        <div class="chart" id="Chart3"> </div>
+        <table>
+            <tr>    <td>    <div class="chartweek1" id="Chart3"></div>   </td>
+                <td>    <div class="chartweek1" id="Chart4"></div>   </td>   </tr>
+            </table>
+        <p>The first chart is a replication of the Financial Times graph and looks at the total IMF Credit Oustanding for all members from 1984-2022. 
+            The second chart is an improvement on the first as it looks at IMF Credit Outstanding as a percentage of World GDP.</p>
+        
+        <hr />
+    </div>
 
-        <h3>Improvement to FT graph on IMF Lending</h3>
+    <div class="Week3">
+        <h2> Task 3</h2>
+        <h3>Covid-19 Cases</h3>
+        <div class="chart" id="Chart5"> </div>
+        <p>This chart shows daily cases of Covid-19 in the UK being produced using the 'incline' feature on Vega</p>
+        <hr />
+    </div>
+
+    <div class="Week4">
+        <h2> Task 4</h2>
+        <h3>Premier League Goalscorers</h3>
+        <div class="chart" id="Chart6"> </div>
+        <p> This chart is of the top Premier League goalscorers and has been obtained by scraping using the code 
+            <a href="https://github.com/joewilliams200217/joewilliams200217.github.io/blob/main/Data_Science_Class_4%20(1).ipynb" id="link4">here</a></p>
+        <hr />
+    </div>
+
+    <div class="Week5">
+        <h2> Task 5</h2>
+        <h3>Employment Rate in the UK</h3>
+        <table>
+        <tr>    <td>    <div class="chartweek5" id="Chart7"></div>   </td>   <td>    <div class="chartweek5" id="Chart8" ></div>  </td>   <td>    <div class="chartweek5" id="Chart9"> </div>  </td>   </tr>
+        <tr>    <td>    <div class="chartweek5" id="Chart10"></div>   </td>   <td>    <div class="chartweek5" id="Chart11" ></div>  </td>   <td>    <div class="chartweek5" id="Chart12"> </div>  </td>   </tr>
+        <tr>    <td>    <div class="chartweek5" id="Chart13"></div>   </td>   <td>    <div class="chartweek5" id="Chart14" ></div>  </td>   <td>    <div class="chartweek5" id="Chart15"> </div>  </td>   </tr>
+        </table>
+        <p> These are nine charts created using an API loop to efficiently produce simliar charts all looking at the the employment rate in the UK. 
+            The code for the API used can be found <a href="https://github.com/joewilliams200217/joewilliams200217.github.io/blob/main/Task5_loop.ipynb" id="link5">here</a></p>
+        </p>
+        <hr />
+    </div>    
+
+    <div class="Week6">
+        <h2> Task 6</h2>
+        <h3>Bristol Chloropeths</h3>
+        <table>
+            <tr>    <td>    <div class="chartweek1" id="Chart16"></div>   </td>
+                <td>    <div class="chartweek1" id="Chart17"></div>   </td>   </tr>
+        </table>
+        <p>This task was to produce two maps. The first shows Bristol divided into the different wards it contains.
+            The second extends this by adding the overall crime by each ward. There was some missing data as 
+            some of the wards shown in the first graph were not in the crime data.</p>
+        <hr />
+    </div>
+
+    <div class="Week7">
+        <h2> Task 7</h2>
+        <h3>The Festival of Economics</h3>
+        <table>
+                <tr>    <td>    <div class="chartweek1" id="Chart18"></div>   </td>
+                    <td>    <div class="chartweek1" id="Chart19"></div>   </td>   </tr>
+        </table>
+        <p> The task was to support or refute an argument from the Festival of Economics. 
+        During the Big Data talk many of the panelists debated the ethics of data sharing and 
+        the extents to which data sharing should be used. The Graphs show that people are willing for their data to be shared in general, however there is a 
+        strong feeling that there must be transparency in the ways the data is shared.</p>
+        
+        <hr />
+    </div>
+
+    <div class="Week8">
+        <h2> Task 8</h2>
+        <h3>Advanced Charts</h3>
+        <table>
+            <tr>    <td>    <div class="chartweek1" id="Chart20"></div>   </td>
+                <td>    <div class="chartweek1" id="Chart21"></div>   </td>   </tr>
+    </table>
+        <p>This task was to create two advanced charts. The two I created were a bubble plot of premier league scorers
+             and a scatter plot of Highstreet Recovery in the UK</p>
+    </div>      
+
     </div> 
 </body>
 
@@ -53,11 +141,48 @@
     var myChart1 = "chartFootball1.json";
     var myChart2 = "chartGDP2.json";
     var myChart3 = "IMF_Outstanding.json";
+    var myChart4 = "IMF_Outstanding_as_percentage_of_GDP.json";
+    var myChart5 = "Covid_cases.json";
+    var myChart6 = "Goalscorers.json";
+    var myChart7 = "LF24.json";
+    var myChart8 = "MGSV.json";
+    var myChart9 = "LF25.json";
+    var myChart10 = "YBUA.json";
+    var myChart11 = "YBUD.json";
+    var myChart12 = "YBUG.json";
+    var myChart13 = "YBUJ.json";
+    var myChart14 = "LF2U.json";
+    var myChart15 = "LFK6.json";
+    var myChart16 = "bristol.json";
+    var myChart17 = "bristol_chloro.json";
+    var myChart18 = "Festival_of_Econ1.json";
+    var myChart19 = "Festival_of_Econ2.json";
+    var myChart20 = "Goalscorersbubble.json";
+    var myChart21 = "highstreetportfolio.json";
+
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
+    vegaEmbed('#Chart20', myChart20);
+    vegaEmbed('#Chart21', myChart21);
 </script>
 
 </html>

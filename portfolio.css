@@ -1,3 +1,7 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my first proper css file */
+
 
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -100,4 +104,4 @@ h1, h2, h3, p{
         border-color: rgb(150, 150, 150);
         text-align: center;   
 }
-   
+    

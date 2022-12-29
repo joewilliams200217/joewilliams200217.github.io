@@ -45,7 +45,7 @@
       }
     ],
     "width": 280,
-    "height": 300,
+    "height": 273,
     "encoding": {
       "x": {"field": "date3", "type": "temporal", "title": null},
       "y": {"field": "value", "type": "quantitative", "title": null},

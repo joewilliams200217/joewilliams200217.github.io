@@ -2,7 +2,7 @@
 
   "title": {
       "text": "IMF Leading Outstanding",
-      "subtitle":"Credit outstanding to all members, SDRs (billions), Source:IMF",
+      "subtitle":["Credit outstanding to all members, SDRs (billions)", "Source:IMF"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",

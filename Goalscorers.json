@@ -1,38 +1,38 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "Top Goal Scorers in Premier League History",
+      "subtitle":"The top 20 goal scorers in Premier League history. Source: Premier League.",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
   
-    "title": {
-        "text": "Top Goal Scorers in Premier League History",
-        "subtitle":"The top 20 goal scorers in Premier League history: Premier League",
-        "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
-        "anchor": "start",
-        "color": "black"},
-    
-    "data":{"url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/Goalscorers.csv"},
-    
-    "height": 300,
-    "width": 300,
+  "data":{"url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/Goalscorers.csv"},
   
-    "mark": {
-      "type": "bar",
-      "color": "rgb(0,47,167"},
-  
-  "encoding": {
-       "x": {
-         "field": "Goals Scored",
-         "type": "quantitative",
-         "title": "Goals scored", 
-         "scale": {"domain": [0, 300]}
-       },
-  
-        "y": {
-          "field": "Player",
-          "type": "ordinal",
-          "sort":[], 
-          "title": null
-  
-          
-  }
-  }
-  }
+  "height": 250,
+  "width": 250,
+
+  "mark": {
+    "type": "bar",
+    "color": "rgb(0,47,167"},
+
+"encoding": {
+     "x": {
+       "field": "Goals Scored",
+       "type": "quantitative",
+       "title": "Goals scored", 
+       "scale": {"domain": [0, 300]}
+     },
+
+      "y": {
+        "field": "Player",
+        "type": "ordinal",
+        "sort":[], 
+        "title": null
+
+        
+}
+}
+}
