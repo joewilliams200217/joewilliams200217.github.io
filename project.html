@@ -13,9 +13,13 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
-<body>
 
-    <body>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
         <div class="topnav">
             <a href="index.html" id="link1">Home</a>
             <a href="project.html" id="link2">Project</a>
@@ -23,34 +27,55 @@
             <a href="https://github.com/joewilliams200217/joewilliams200217.github.io" id="link4">Github</a>  
         </div>
         
-    <div class="myWeek1">   
-<h1>Data Science Project</h1>
+    <div class="Title">
 
-<h2>To what extent has Covid-19 impacted the long term shopping habits of consumers</h2>
+<h2>To what extent has Covid-19 impacted the long term shopping habits of consumers in the UK?</h2>
 
-<h3>Graph 1 - online vs instore</h3>
-<p>This shows the comparison of spending between online and instore spending</p>
+<h3>Joe Williams | Student ID: 2038165</h3>
+
+<hr />
+</div>
+<div class="Week1">
+
+<h3>Motivation:</h3>
+<p>This project aims to look at how the pandemic may have affected the long-term consumption patterns of consumers. In the years before the pandemic many feared the beginning of the death of the Highstreet. The pandemic resulted in a hige demand increase for online services which included a surge in online shopping. This posed the question of whether in-person stores would be able to survive in a post pandemic world.
+    The graphs below help to explain the extent of the shift to online shopping and whether this has caused long term effects on consumers habits. 
+    </p>
+    <hr />
+
+<h3>Chart 1</h3>
 <div class="chart" id="Chart1"></div>
+<p>Chart 1 is made with data from the ONS and outlines the changes in online and instore shopping. Online shopping increased greatly during the pandemic and has remained at a similar level since. While instore spending naturally took a large hit but has returned to above pre-pandemic levels now. </p>
 <hr />
 
-<h3>Graph 2 - store changes</h3>
-<p></p>
-<div class="chart" id="Chart2"></div>
+<h3>Chart 2 & 3</h3>
+<p>Charts 2 and 3 use yahoo finance data to compare 7 different stocks of online and in-person. Chart 2 shows that apart from Alibaba and GAP the online and instore stocks are clustered very closely.  
+    Chart 3 shows the Z scores of the stocks. In this data we can see the recovery of many of the in-person stocks by 2023 and online stocks aren’t necessarily outperforming in-person. 
+    </p>
 <hr />
 
-<h3>Graph 3 - Highstreet data</h3>
-<p></p>
-<div class="chart" id="Chart3"></div>
+<h3>Chart 4</h3>
+<div class="chart2" id="Chart2"></div>
+<p>Chart 4 uses data collected from PWC to look at the net changes in store openings and closures across the last 6 years. The data shows of although there is a trend of negative net changes in all years, since the pandemic this has reduced implying that business is recovering and people continuing to shop instore. </p>
 <hr />
 
-<h3>Graph 4 - Online spending</h3>
-<p></p>
-<div class="chart" id="Chart4"></div>
+<h3>Chart 5</h3>
+<div class="chart3" id="Chart3"></div>
+<p>Chart 5 uses data from Center for Cities that shows the recovery of various highstreets in the UK. The data shows while average footfall varies from its levels before pre-lockdown measures, all the cities apart from Aldershot Spend Index is above 100 showing peoples return to in-person shopping. The data also indicates that there seems to be not clear correlation between store closures and the other two indexes. </p>
+
 <hr />
 
-<h3>Graph 5 - </h3>
-<p></p>
+<h3>Chart 6 - </h3>
+<div class="chart4" id="Chart4"></div>
+<p>Chart 6 uses ONS data and shows within different sectors the proportion of sales being online purchases. As expected, all sectors online spending peaked at the beginning of the pandemic and while most remain above pre-pandemic levels a lot of the sectors proportion of sales has remained relatively constant. This implies that while the pandemic may have changed the habits of some consumers, many have reverted to how they consumed before the pandemic, opting to shops in-store again. </p>
 <hr />
+
+<h3>Data:</h3>
+<p>Chart 1 was created by using an API loop in colab (link there). As the api created cannot be directly read by vrga, I used the api all origins win key to combat this problem. Also, as the dates created by ONS were not compatible with vega new date columns had to be created through transformations. Charts 2 and 3 were created in colab using clustering. The yahoo finance data was accessed through installing it as a package in colab. Chart 4 was created from a csv accessed from the PWC and cleaned in excel as the original file presented the data in a very accessible way. Chart 5 was created by downloading multiple csvs and then cleaning each one and merging them within stata. Chart 6 was created by downloading data from the ONS which was inputted directly into vega. </p>
+<hr>
+
+<h3>Conclusions:</h3>
+<p>Overall, there does seem to have been a change in the habits of consumers, with the increase in online shopping playing a more prevalent role in their consumption habits. However, the recovery of instore shopping has also been very positive across the last 3 years, with many places spending being back to pre-pandemic levels with some even being above. Hence, one would argue with the evidence above that the long-term shopping habits have been changed to include a greater amount of online shopping, but not as large of an extent as most feared. This question stimulates motivation for futures studies as the data currently around this topic is limited. Hence with increased studies about economy’s recovery from the pandemic in the future there will be areas to extend this question.   </p>
 
 </body>
 
@@ -67,5 +92,18 @@
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
 </script>
+
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 1500);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
 
 </html>

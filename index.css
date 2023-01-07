@@ -9,25 +9,60 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(150, 150, 150);
+  background-color: #adadad ;
  
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h2, h3, p{
+h1, h2, h3, p, table{
     color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+.Title{
+  font-family: 'Arial', sans-serif;
+  margin: auto;
+  background-color:#557A95;
+  text-align: start;
 }
 
     
 .Week1, .Week2, .Week3, .Week4,
-.Week5, .Week6, .Week7, .Week8, .Title{
-    margin: auto;
-    max-width: 600px;
-    background-color: rgb(100,100,100);
+.Week5, .Week6, .Week7, .Week8{
+  font-family: 'Arial', sans-serif;
+  margin: auto;
+  background-color: #adadad;
+  max-width: 600px;
 }
+
+#linkstyle{
+  background-color: rgba(0, 47, 167, .5);
+  padding:20px;
+  border:2px;
+  border-color:grey;
+  border-style: solid;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  font-weight:700;
+  color:white;
+  text-decoration: none;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+
+}
+
+#linkstyle:hover{
+  background-color: rgba(0, 47, 167, .8);
+  border:2px;
+  border-color:yellow;
+  border-style: solid;}
+
 
 /* Loader*/
 #loader {
@@ -82,7 +117,7 @@ h1, h2, h3, p{
 
 /* Naviagtion Bar: */
 .topnav {
-    background-color: #333;
+    background-color: #113b5a;
     overflow: hidden;
   }
   
@@ -94,6 +129,7 @@ h1, h2, h3, p{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Arial', sans-serif;
   }
   
   /* Change the color of links on hover */
@@ -116,7 +152,7 @@ h1, h2, h3, p{
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rgb(150, 150, 150);
+    border-color: rgb(75, 75, 75);
     text-align: center;
 }
 
@@ -126,7 +162,7 @@ h1, h2, h3, p{
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    border-color: rgb(150, 150, 150);
+    border-color: rgb(75, 75, 75);
     text-align: center;
 }
 
@@ -136,7 +172,7 @@ h1, h2, h3, p{
         border-width: 2px;
         border-style: solid;
         border-radius: 10px;
-        border-color: rgb(150, 150, 150);
+        border-color: rgb(75, 75, 75);
         text-align: center;   
 }
     

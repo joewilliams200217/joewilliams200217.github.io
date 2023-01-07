@@ -22,15 +22,21 @@
 
 
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
     <div class="topnav">
-        <a href="project.html" id="link1">Project</a>
-        <a href="portfolio.html" id="link2">Portfolio</a>
-        <a href="https://github.com/joewilliams200217/joewilliams200217.github.io" id="link3">Github</a>  
+        <a href="index.html" id="link1">Home</a>
+        <a href="project.html" id="link2">Project</a>
+        <a href="portfolio.html" id="link3">Portfolio</a>
+        <a href="https://github.com/joewilliams200217/joewilliams200217.github.io" id="link4">Github</a>  
     </div>
 
     <div class="Title">
-        <h1>Data Science Home Page</h1>
+        <h1>Data Science Portfolio Page</h1>
         <h2>Joe Williams | Student ID: 2038165</h2>
         <hr />
     </div>
@@ -40,10 +46,8 @@
     <div class="Week1">
         <h2> Task 1</h2>
         <h3>The English Premiership and GNI in the UK</h3>
-        <table>
-        <tr>    <td>    <div class="chartweek1" id="Chart1"></div>   </td>
-            <td>    <div class="chartweek1" id="Chart2"></div>   </td>   </tr>
-        </table>
+        <div class="chartweek1" id="Chart1"></div>
+        <div class="chartweek1" id="Chart2"></div>   
         <p>The first chart looks at whether there is a home advantage in the Premiership and the second chart looks at Gross National Income in the UK between 2005 and 2022</p>
          <hr />
     </div>
@@ -52,10 +56,8 @@
         <h2> Task 2</h2>
 
         <h3>IMF Lending Outstanding</h3>
-        <table>
-            <tr>    <td>    <div class="chartweek1" id="Chart3"></div>   </td>
-                <td>    <div class="chartweek1" id="Chart4"></div>   </td>   </tr>
-            </table>
+        <div class="chartweek1" id="Chart3"></div>
+        <div class="chartweek1" id="Chart4"></div>   
         <p>The first chart is a replication of the Financial Times graph and looks at the total IMF Credit Oustanding for all members from 1984-2022. 
             The second chart is an improvement on the first as it looks at IMF Credit Outstanding as a percentage of World GDP.</p>
         
@@ -96,10 +98,8 @@
     <div class="Week6">
         <h2> Task 6</h2>
         <h3>Bristol Chloropeths</h3>
-        <table>
-            <tr>    <td>    <div class="chartweek1" id="Chart16"></div>   </td>
-                <td>    <div class="chartweek1" id="Chart17"></div>   </td>   </tr>
-        </table>
+        <div class="chartweek1" id="Chart16"></div>
+        <div class="chartweek1" id="Chart17"></div>
         <p>This task was to produce two maps. The first shows Bristol divided into the different wards it contains.
             The second extends this by adding the overall crime by each ward. There was some missing data as 
             some of the wards shown in the first graph were not in the crime data.</p>
@@ -109,10 +109,8 @@
     <div class="Week7">
         <h2> Task 7</h2>
         <h3>The Festival of Economics</h3>
-        <table>
-                <tr>    <td>    <div class="chartweek1" id="Chart18"></div>   </td>
-                    <td>    <div class="chartweek1" id="Chart19"></div>   </td>   </tr>
-        </table>
+        <div class="chartweek1" id="Chart18"></div>
+        <div class="chartweek1" id="Chart19"></div>
         <p> The task was to support or refute an argument from the Festival of Economics. 
         During the Big Data talk many of the panelists debated the ethics of data sharing and 
         the extents to which data sharing should be used. The Graphs show that people are willing for their data to be shared in general, however there is a 
@@ -124,10 +122,8 @@
     <div class="Week8">
         <h2> Task 8</h2>
         <h3>Advanced Charts</h3>
-        <table>
-            <tr>    <td>    <div class="chartweek1" id="Chart20"></div>   </td>
-                <td>    <div class="chartweek1" id="Chart21"></div>   </td>   </tr>
-    </table>
+        <div class="chartweek1" id="Chart20"></div>
+        <div class="chartweek1" id="Chart21"></div>
         <p>This task was to create two advanced charts. The two I created were a bubble plot of premier league scorers
              and a scatter plot of Highstreet Recovery in the UK</p>
     </div>      
@@ -184,5 +180,18 @@
     vegaEmbed('#Chart20', myChart20);
     vegaEmbed('#Chart21', myChart21);
 </script>
+
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 1500);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
 
 </html>

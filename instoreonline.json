@@ -3,7 +3,7 @@
 "description": "Comparison of instore shopping and online shopping",
 "title": {
     "text": "Comparison of Online and Instore shopping",
-    "subtitle": "Index 2019=100 Source: ONS - Retail Sales Index",
+    "subtitle": ["Index 2019=100", "Source: ONS - Retail Sales Index","Colours: Red = Online Spending, Green = Instore Spending"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",

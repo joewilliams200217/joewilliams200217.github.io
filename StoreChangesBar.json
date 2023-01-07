@@ -12,7 +12,7 @@
 
 "data": {"url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/Storesdatabar.csv",
 "format": {"type":"csv"}},
-"mark":{"type": "bar"},
+"mark":{"type": "bar", "fill":"#557A95"},
 
 "transform": [{"filter": "datum.Year==Year"}],
 
