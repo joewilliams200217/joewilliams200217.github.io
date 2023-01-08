@@ -11,8 +11,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/Highstreetsdata.csv"
   },
-  "height":250,
-  "width":250,
+  "height":200,
+  "width":200,
   "mark": {
     "type":"circle",
     "size":100,
