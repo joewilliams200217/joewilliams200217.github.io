@@ -1,15 +1,10 @@
-/* Richard Davies, Data Science for Economists */
-
-/* This is my first proper css file */
-
-
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 /* Set the background color for my page: */
 body{
-  background-color: #adadad ;
+  background-color: #676363 ;
  
 }
 
@@ -37,31 +32,11 @@ h1, h2, h3, p, table{
   margin: auto;
   background-color: #adadad;
   max-width: 600px;
-}
-
-#linkstyle{
-  background-color: rgba(0, 47, 167, .5);
-  padding:20px;
-  border:2px;
-  border-color:grey;
+  border-width: 2px;
   border-style: solid;
   border-radius: 10px;
-  font-family: 'Arial', sans-serif;
-  font-weight:700;
-  color:white;
-  text-decoration: none;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  position: relative;
-
+  border-color: #113b5a
 }
-
-#linkstyle:hover{
-  background-color: rgba(0, 47, 167, .8);
-  border:2px;
-  border-color:yellow;
-  border-style: solid;}
 
 
 /* Loader*/
@@ -153,26 +128,28 @@ h1, h2, h3, p, table{
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(75, 75, 75);
-    text-align: center;
+}
+.chart2{
+  background-color: white;
+  width:410px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(75, 75, 75);}
+.chart3{
+  background-color: white;
+  width:450px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(75, 75, 75);
 }
 
-.chartweek1{
+.chart4{
     background-color: white;
-    width:390px;
+    width:500px;
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(75, 75, 75);
-    text-align: center;
-}
-
-.chartweek5{
-        background-color: white;
-        width:190px;
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 10px;
-        border-color: rgb(75, 75, 75);
-        text-align: center;   
-}
-    
+  }

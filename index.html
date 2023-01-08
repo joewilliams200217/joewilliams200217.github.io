@@ -1,18 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Title for the page -->
-    <title>Index Page</title>
+    <title>Document</title>
 
-    <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="project.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -20,34 +14,114 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
 
-
-
 <body onload="myFunction()" style="margin:0;">
 
     <div id="loader"></div>
     
     <div style="display:none;" id="myDiv" class="animate-bottom">
 
-    
-        <div class="Title">
-            <h1>Data Science Home Page</h1>
-            <h2>Joe Williams | Student ID: 2038165</h2>
-            <hr>
-            <h5>Welcome to my Data Science homepage, click one of the links below to explore the website</h5>
-            <hr />
+        <div class="topnav">
+            <a href="index.html" id="link1">Project</a>
+            <a href="portfolio.html" id="link3">Portfolio</a>
+            <a href="https://github.com/joewilliams200217/joewilliams200217.github.io" id="link4">Github</a>  
         </div>
+        
+    <div class="Title">
 
+<h1>Data Science Portfolio Page</h1>
+<h3>Joe Williams | Student ID: 2038165</h3>
+<br />
 
-        <div class="Week1">
-            <a href="project.html" id="linkstyle">Project</a>
-            <a href="portfolio.html" id="linkstyle">Portfolio</a>
-            <a href="https://github.com/joewilliams200217/joewilliams200217.github.io" id="linkstyle">Github</a>
-            <a href="https://rapidcharts.io/datascience" id="linkstyle">Course Page</a>  
-        </div>
+</div>
+<div class="Week1">
+    <br/>
+    <h2>To what extent has Covid-19 impacted the long term shopping habits of consumers in the UK?</h2>
+    <br />
+<h3>Motivation:</h3>
+<br />
+<p>This project aims to look at how the pandemic may have affected the long-term consumption patterns of consumers. In the years before the pandemic many feared the beginning of the death of the Highstreet. The pandemic resulted in a hige demand increase for online services which included a surge in online shopping. This posed the question of whether in-person stores would be able to survive in a post pandemic world.
+    <br />The graphs below help to explain the extent of the shift to online shopping and whether this has caused long term effects on consumers habits. 
+    </p>
+    <br />
 
-    </div>
-    
-    <script>
+<h3>Chart 1</h3>
+<br />
+<div class="chart" id="Chart1"></div>
+<br /><br />
+<p>Chart 1 is made with data from the ONS and outlines the changes in online and instore shopping. Online shopping increased greatly during the pandemic and has remained at a similar level since. While instore spending naturally took a large hit but has returned to above pre-pandemic levels now. </p>
+<br />
+
+<h3>Charts 2 & 3</h3>
+<br />
+<img src="zvalues.png" width="450"/>
+<br />
+<img src="dendogram.png" width="450" height="300"/>
+<br /><br />
+<p>Charts 2 and 3 use yahoo finance data to compare 7 different stocks of online and in-person. Chart 2 shows that apart from Alibaba and GAP the online and instore stocks are clustered very closely.  
+    Chart 3 shows the Z scores of the stocks. In this data we can see the recovery of many of the in-person stocks by 2023 and online stocks aren’t necessarily outperforming in-person. 
+    </p>
+    <br />
+
+<h3>Chart 4</h3>
+<br />
+<div class="chart2" id="Chart2"></div>
+<br /><br />
+<p>Chart 4 uses data collected from PWC to look at the net changes in store openings and closures across the last 6 years. The data shows of although there is a trend of negative net changes in all years, since the pandemic this has reduced implying that business is recovering and people continuing to shop instore. </p>
+<br />
+
+<h3>Chart 5</h3>
+<br />
+<div class="chart3" id="Chart3"></div>
+<br /><br />
+<p>Chart 5 uses data from Center for Cities that shows the recovery of various highstreets in the UK. The data shows while average footfall varies from its levels before pre-lockdown measures, all the cities apart from Aldershot Spend Index is above 100 showing peoples return to in-person shopping. The data also indicates that there seems to be not clear correlation between store closures and the other two indexes. </p>
+<br />
+
+<h3>Chart 6</h3>
+<br />
+<div class="chart4" id="Chart4"></div>
+<br /><br />
+<p>Chart 6 uses ONS data and shows within different sectors the proportion of sales being online purchases. As expected, all sectors online spending peaked at the beginning of the pandemic and while most remain above pre-pandemic levels a lot of the sectors proportion of sales has remained relatively constant. This implies that while the pandemic may have changed the habits of some consumers, many have reverted to how they consumed before the pandemic, opting to shops in-store again. </p>
+<br />
+
+<h3>Data:</h3>
+<br />
+<p>Chart 1 was created by using an API loop in <a href="https://github.com/joewilliams200217/joewilliams200217.github.io/blob/main/Chart1_loop.ipynb" id="link5">colab</a>. As the api created cannot be directly read by vega, I used the api all origins win key to combat this problem. Also, as the dates created by ONS were not compatible with vega new date columns had to be created through transformations. 
+    <br />Charts 2 and 3 were created in <a href="https://github.com/joewilliams200217/joewilliams200217.github.io/blob/main/ClusterDendogram.ipynb" id="link6">colab</a> using clustering. The yahoo finance data was accessed through installing it as a package in colab. 
+    <br />Chart 4 was created from a csv accessed from the PWC and cleaned in excel as the original file presented the data in a very accessible way. 
+    <br />Chart 5 was created by downloading multiple csvs and then cleaning each one and merging them within <a href="https://github.com/joewilliams200217/joewilliams200217.github.io/blob/main/HighstreetRecoveryMerge.do" id="link7">stata</a>. 
+    <br />Chart 6 was created by downloading data from the ONS which was inputted directly into vega. </p>
+<br />
+
+<h3>Conclusions:</h3>
+<br />
+<p>Overall, there does seem to have been a change in the habits of consumers, with the increase in online shopping playing a more prevalent role in their consumption habits.
+     However, the recovery of instore shopping has also been very positive across the last 3 years, with many places spending being back to pre-pandemic levels with some even being above. 
+     Hence, one would argue with the evidence above that the long-term shopping habits have been changed to include a greater amount of online shopping, but not as large of an extent as most feared. 
+     This question stimulates motivation for futures studies as the data currently around this topic is limited. Hence with increased studies about economy’s recovery from the pandemic in the future there will be areas to extend this question.   </p>
+<br />
+
+<h3>Challenges:</h3>
+<br />
+<p></p>
+<br /><br />
+
+</body>
+
+<script>
+    //Define charts:
+    var myChart1 = "instoreonline.json";
+    var myChart2 = "StoreChangesBar.json";
+    var myChart3 = "highstreet.json";
+    var myChart4 = "Onlinespending.json";
+   
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+</script>
+
+<script>
     var myVar;
     
     function myFunction() {
@@ -59,9 +133,5 @@
       document.getElementById("myDiv").style.display = "block";
     }
     </script>
-    
-    
 
 </html>
-
-

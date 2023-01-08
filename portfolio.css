@@ -5,7 +5,7 @@
 
 /* Set the background color for my page: */
 body{
-  background-color: #adadad ;
+  background-color: #676363  ;
  
 }
 
@@ -33,8 +33,11 @@ h1, h2, h3, p, table{
   margin: auto;
   background-color: #adadad;
   max-width: 600px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #113b5a
 }
-
 
 /* Loader*/
 #loader {
