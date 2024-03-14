@@ -1,4 +1,4 @@
-﻿ID,cou,country,EU,year,LE_female,LE_male,H_expenditure,H_insurance
+﻿ID,cou,country,EU,year,LE_female,Life Expectancy (male),Health Expenditure,H_insurance
 1,AUT,Austria,1,2018,84.1,79.4,10.349,99.9
 1,AUT,Austria,1,2016,84.1,79.3,10.352,99.9
 1,AUT,Austria,1,2020,83.6,78.9,11.385,99.9
