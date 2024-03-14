@@ -10,12 +10,12 @@
       "color": "black"},
   "data": {"url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/OECD.csv"},
   "height":200,
-  "width":400,
+  "width":200,
   "layer":[{
     "mark": "circle",
     "encoding": {
-      "x": {"field": "Health Expenditure", "type": "quantitative"},
-      "y": {"field": "Life Expectancy (male)", "type": "quantitative",  "scale": {"zero": false}},
+      "x": {"field": "Health Expenditure", "type": "quantitative", "scale": {"zero": false}},
+      "y": {"field": "Life Expectancy (male)", "type": "quantitative", "scale": {"zero": false}},
       "tooltip":[
         {"field":"country"},
         {"field":"year"},
