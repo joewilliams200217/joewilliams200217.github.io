@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+   "title": {
+      "text": "Realtionship between health spending and life expectancy",
+      "subtitle":["Data showing the average life expectancy of men in relation to their countries ", "spending on healthcare as a % of their GDP Source: OECD"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  "data": {"url": "https://raw.githubusercontent.com/joewilliams200217/joewilliams200217.github.io/main/OECD.csv"},
+  "height":200,
+  "width":400,
+  "layer":[{
+    "mark": "circle",
+    "encoding": {
+      "x": {"field": "Health Expenditure", "type": "quantitative"},
+      "y": {"field": "Life Expectancy (male)", "type": "quantitative",  "scale": {"zero": false}},
+      "tooltip":[
+        {"field":"country"},
+        {"field":"year"},
+        {"field":"Life Expectancy (male)"},
+        {"field":"Health Expenditure"}
+        ]
+      }},
+      {
+  "mark":{
+    "type":"line",
+    "color":"darkblue"
+  },
+  "transform":[{
+    "regression": "Health Expenditure",
+    "on": "Life Expectancy (male)"
+  }],
+  "encoding": {
+    "x":{"field":"Health Expenditure", "type":"quantitative"},
+    "y":{ "field":"Life Expectancy (male)", "type":"quantitative"}
+  }
+}]
+}
